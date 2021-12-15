@@ -4,7 +4,6 @@ const AddNote = ({ handleAddNote, handleAddNote2 }) => {
 	const [noteText, setNoteText] = useState('');
 	const [x, setX] = useState(false);
 	const characterLimit = 200;
-	var impp = false;
 
 	const handleChange = (event) => {
 		if (characterLimit - event.target.value.length >= 0) {
@@ -18,7 +17,7 @@ const AddNote = ({ handleAddNote, handleAddNote2 }) => {
 
 	const handleSaveClick = () => {
 		if (noteText.trim().length > 0) {
-			if (x == true) {
+			if (x === true) {
 				handleAddNote2(noteText);
 			}
 			else {

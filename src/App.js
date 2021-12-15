@@ -3,7 +3,6 @@ import { nanoid } from 'nanoid';
 import NotesList from './components/NotesList';
 import Search from './components/Search';
 import Header from './components/Header';
-import AddNote from './components/AddNote';
 import Panel from './components/Panel';
 
 const App = () => {
